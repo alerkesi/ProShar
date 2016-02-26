@@ -545,11 +545,11 @@ ul.list li:before {
 	background: #882628;
 	color: #fff;
 }
-.total_mimicart {
+.total_minicart {
 	font-size: 18px;
 	margin-bottom: 10px;
 }
-.total_mimicart span {
+.total_minicart span {
 	font-size: 21px;
 }
 .cart .row > div.product_image_cart {
@@ -2711,7 +2711,7 @@ div#galleryCarousel > .item.active {
 		max-height: 50%!important;
 		margin-bottom: 10px;
 	}
-	.total_mimicart {
+	.total_minicart {
 		float: left;
 	}
 	.minicart_button {
