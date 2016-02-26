@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="theme-color" content="#9b2528">
+	<title>Pro Shar</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/jquery.fullPage.css"  rel="stylesheet" />
+	<!-- OWL Carousel -->
+	<link href="css/owl.carousel.css" rel="stylesheet" />
+	<link href="css/owl.theme.css" rel="stylesheet" />
+	<link href="css/wSelect.css" rel="stylesheet" />
+	<link href="css/jquery.formstyler.css" rel="stylesheet"  />
+	<link href="css/jquery.jscrollpane.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.m
+	axcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+	<script type="text/javascript" src="js/maps.js"></script>
+</head>
+<body class="home" >
+
+	<!--Preloader-->
+	<div id="preloader">
+		<div id="pre-block"><img src="images/three-dots.svg" alt=""></div>
+	</div>
+	<!--end #preloader-->
+
+	<!--Page-->
+	<div id="page">
+
+		<!--Header-->
+		<header id="header">
+			<div class="container">
+				<!--Top block-->
+				<div id="top_block" class="row">
+
+					<div class="col-sm-4 col-xs-6 logo">
+						<a href="#"></a>
+					</div>
+
+					<div class="col-sm-4 col-xs-6 header_info pull-right">
+						<div class="inline_block phone">
+							<a href="tel:88007442974">8 (800) 744-29-74</a>
+						</div>
+						<div class="inline_block lang_select">
+							<select name="lang" class="lang">
+								<option value="rus">Rus</option>
+								<option value="eng">Eng</option>
+							</select>
+						</div>
+						<div class="inline_block menu_button">
+							<div class="inline_block">меню</div>
+							<div class="inline_block menu_bar">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div id="hide_modal" class="read_more">
+							<img src="images/str.png" alt="ОБратно">обратно
+						</div>
+						<div id="hide_modal_video" class="read_more">
+							<img src="images/top_bar_1.png" alt="Закрыть">
+						</div>
+						<div id="donwload_image">
+							<a href="#" class="inline_block read_more">скачать</a>
+							<a href="#" class="inline_block hide_image">
+								<img src="images/top_bar_1.png" alt="Закрыть">
+							</a>
+						</div>
+						<div class="clear"></div>
+						<div class="mini_cart select">
+							<div class="mini_cart_link">
+								<span class="minicart_title">Корзина</span>
+								<span class="minicart_title_regist">Alexey Semenov</span>
+								<span class="minicart_count">3</span>
+							</div>
+							<div id="cart" class="drop cart">
+								<div class="cart_product_list">
+									<div class="row">
+										<div class="col-xs-6 product_image_cart text_center">
+											<img src="images/product_1.png" alt="">
+										</div>
+										<div class="col-xs-6 product_content_cart">
+											<div class="prodict_name">PROSHAR Premium</div>
+											<div class="count_input_minicart">
+												<input type="number" value="5" class="styleform">
+											</div>
+											<div class="minicart_product_price price_val price_val ">2800 <span>₽</span></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 product_image_cart text_center">
+											<img src="images/product_2.png" alt="">
+										</div>
+										<div class="col-xs-6 product_content_cart">
+											<div class="prodict_name">PROSHAR Premium</div>
+											<div class="count_input_minicart">
+												<input type="number" value="5" class="styleform">
+											</div>
+											<div class="minicart_product_price price_val price_val">2800 <span>₽</span></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 product_image_cart text_center">
+											<img src="images/product_3.png" alt="">
+										</div>
+										<div class="col-xs-6 product_content_cart">
+											<div class="prodict_name">PROSHAR Premium</div>
+											<div class="count_input_minicart">
+												<input type="number" value="5" class="styleform">
+											</div>
+											<div class="minicart_product_price price_val price_val">2800 <span>₽</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="bottom_minicart text_center">
+									<div class="total_mimicart">Всего: <span class="total_mimicart_count">2800 <span>₽</span></span></div>
+									<div class="minicart_button">
+										<a href="#cart" class="button order_button">Оформить заказ</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+
+					<div class="col-sm-4 col-xs-12 count_shar">
+						<div class="count_shar_info">Произведено шаров</div>
+						<div class="counter">
+							<span id="k-12">0</span>
+							<span id="k-11">0</span>
+							<span id="k-10">2</span>
+							<span id="k-9">7</span>
+							<span id="k-8">8</span>
+							<span id="k-7">1</span>
+							<span id="k-6">4</span>
+							<span id="k-5">0</span>
+							<span id="k-4">7</span>
+							<span id="k-3">6</span>
+							<span id="k-2">6</span>
+							<span id="k-1">2</span>
+						</div>
+					</div>
+				</div>
+				<!--end #top_block-->
+
+				<div class="clear"></div>
+			</div>
+
+		</header>
+		<!--end #header-->
+
+		<!--Menu-->
+		<div id="menu">
+			<div class="menu_scroll">
+				<div class="row">
+					<div class="col-xs-6 logo_menu visible-xs">
+						<a href="#">
+							<img src="images/logo_white.png" alt="Pro Shar">
+						</a>
+						<div class="menu_phone">
+							<a href="tel:88007442974">8 (800) 744-29-74</a>
+						</div>
+					</div>
+					<div class="col-md-12 col-xs-6 show_menu_block">
+						<div class="show_menu">скрыть<img src="images/str.png" alt="Скрыть"></div>
+						<div class="lang_men visible-xs">
+							<div class="abs_input">
+								<input type="radio" name="lang" value="Rus" checked="checked">
+								<label>Rus</label>
+							</div>
+							<div class="abs_input">
+								<input type="radio" name="lang" value="Eng">
+								<label>Eng</label>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<nav>
+					<ul>
+						<li data-menuanchor="home"><a href="#home">О компании</a></li>
+						<li data-menuanchor="ideology"><a href="#ideology">Идеология</a></li>
+						<li data-menuanchor="maps"><a href="#maps">Карта</a></li>
+						<li data-menuanchor="pressroom"><a href="#pressroom">Пресс-центер</a></li>
+						<li data-menuanchor="social_responsibility"><a href="#social_responsibility">Социальная отвественность</a></li>
+						<li data-menuanchor="products"><a href="#products">Продукция</a></li>
+					</ul>
+				</nav>
+				<div class="account_link">
+					<ul>
+						<li data-menuanchor="products"><a href="#products" class="private_office_link">Личный кабинет</a></li>
+						<li><a href="#">Обратная свазь</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--end #menu-->
+
+
+		<!--Content-->	
+		<div id="content">
+
+			<!--Section - 1 Home-->
+			<div class="section home" id="section0" data-anchor="home">
+				<div class="bg_section_home"></div>
+				<div class="opacity_section"></div>
+				<div class="container">
+					<div class="left_sidebar">
+						<div id="homeLeftSidebar">
+							<div class="container">
+								<div class="content_left_sidebar">
+									<div class="title_tabs">Главная</div>
+									<ul class="nav nav-tabs" role="tablist">
+										<li role="presentation" class="active"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">О нас</a></li>
+										<li role="presentation"><a href="#steps" aria-controls="steps" role="tab" data-toggle="tab" data-active-tabs="step">Этапы</a></li>
+									</ul>
+								</div>
+							
+								<div class="navigation_step custom_navigation" data-active-tabs="step">
+									<a class="btn prev prev_button"></a>
+									<div id="owlStatus" class="count_step">
+										<div class="active_step inline_block currentItem">
+											<span class="result"></span>
+										</div> /
+										<div class="inline_block total_step result owlItems">
+											<span class="result"></span>
+										</div>
+									</div>
+									<a class="btn next next_button"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="home_content">
+						<div class="content">
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane fade in active" id="about">
+									<p>Впервые на российском рынке мы представляем "свежий" шар, шар,который не стоял в
+										очередях на границе, не ждал своего часана таможне, не пылился по заоблачным
+										ценам на полках в магазине- обо всем этом теперь можно забыть! Наш шар
+										произведен в России,по новейшим технологиям, с использованием
+										высококачественного сырья.При работе над технологией производства нам были
+										учтеныпожелания опытнейших игроков  России и всего мира.</p>
+
+									<div class="button_bottom">
+										<div class="button_home button">Подробнее о нас</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="steps" data-active-tabs="step">
+									<div class="owl-carousel">
+										<div class="item">
+											<div class="big_text">Хорошенько всболтать</div>
+											<p>Впервые на российском рынке мы представляем "свежий" шар, шар,который не стоял в очередях на границе, не ждал своего часана таможне, не пылился по заоблачным ценам на полках в магазине- обо всем этом теперь можно забыть! Наш шар произведен в России,по новейшим технологиям, с использованием высококачественного сырья.При работе над технологией производства нам были учтеныпожелания опытнейших игроков  России и всего мира.</p>
+											<a href="#" class="read_more">подробнее об этапе</a>
+										</div>
+										<div class="item">
+											<div class="big_text">Хорошенько всболтать</div>
+											<p>Впервые на российском рынке мы представляем "свежий" шар, шар,который не стоял в очередях на границе, не ждал своего часана таможне, не пылился по заоблачным ценам на полках в магазине- обо всем этом теперь можно забыть! Наш шар произведен в России,по новейшим технологиям, с использованием высококачественного сырья.При работе над технологией производства нам были учтеныпожелания опытнейших игроков  России и всего мира.</p>
+											<a href="#" class="read_more">подробнее об этапе</a>
+										</div>
+										<div class="item">
+											<div class="big_text">Хорошенько всболтать</div>
+											<p>Впервые на российском рынке мы представляем "свежий" шар, шар,который не стоял в очередях на границе, не ждал своего часана таможне, не пылился по заоблачным ценам на полках в магазине- обо всем этом теперь можно забыть! Наш шар произведен в России,по новейшим технологиям, с использованием высококачественного сырья.При работе над технологией производства нам были учтеныпожелания опытнейших игроков  России и всего мира.</p>
+											<a href="#" class="read_more">подробнее об этапе</a>
+										</div>
+										<div class="item">
+											<div class="big_text">Хорошенько всболтать</div>
+											<p>Впервые на российском рынке мы представляем "свежий" шар, шар,который не стоял в очередях на границе, не ждал своего часана таможне, не пылился по заоблачным ценам на полках в магазине- обо всем этом теперь можно забыть! Наш шар произведен в России,по новейшим технологиям, с использованием высококачественного сырья.При работе над технологией производства нам были учтеныпожелания опытнейших игроков  России и всего мира.</p>
+											<a href="#" class="read_more">подробнее об этапе</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end .home-->
+			
+			<!--Section -2 Ideology-->
+			<div class="section ideology" id="section1" data-anchor="home">
+				<div class="container">
+					<h3>Идеология</h3>
+					<div class="ideology_items owl-carousel">
+						<div class="item">
+							<img src="images/ideology_1.png" alt="Идеология">
+							<p>Бренд Про-Шар это: сайт компаниис многотысячными посещениями,
+							интернет видео канал  Pro-Shar TV,
+							ежегодная серия турниров Pro-Shar
+							и своя пейнтбольная команда
+							Fighter- Patriot  в Российских сериях
+							и Fighter Pro- Shar в Европейских
+							турнирах.  Команда побеждающая
+							на каждом турнире и уже ставшая
+							чемпионом России. Сотрудничество
+							компании Pro-Shar с федерацией
+							пейнтбола отражено во многих
+							отчетах и материалах.</p>
+						</div>
+						<div class="item">
+							<img src="images/ideology_2.png" alt="Идеология">
+							<p>Компания Pro- Shar является
+							спонсором многих Российских
+							команд, наши логотипы размещены
+							на фирменных джерси. За последний
+							год компания спонсировала ряд
+							благотворительных мероприятийдля воспитанников детских домов,
+							для трудных подростков состоящихна учете в органах внутренних дел,
+							для людей с ограниченными
+							возможностями
+							опорно-двигательногоаппарата и многих других.</p>
+						</div>
+						<div class="item">
+							<img src="images/ideology_3.png" alt="Идеология">
+							<p>В этом году компания становиться
+							спонсором впервые образованной
+							команды глухонемых пейнтболистов.
+							Сюда нужно добавить, что в концемая прошлого года бренд компании
+							Pro-Shar Патриот был представленна пейнтбольном турнире
+							проходившего в рамках VII военно-
+							спортивного форума, Готов к Трудуи Обороне, который проводилсяв Кремле на Красной Площади.Это событие освещалоськрупнейшими СМИ нашей страны.</p>
+						</div>
+						<div class="item">
+							<img src="images/ideology_4.png" alt="Идеология">
+							<p>На сегодня, компании
+							принадлежат четыре бренда
+							пейнтбольных шарови в разработке на следующий
+							год еще четыре. Тестирование
+							новых формул шаров
+							производится лучшими
+							пейнтболистами странына площадке многократных
+							чемпионов мира, команды
+							Русский Легион.</p>
+						</div>
+						<div class="item">
+							<img src="images/ideology_1.png" alt="Идеология">
+							<p>Бренд Про-Шар это: сайт компаниис многотысячными посещениями,
+							интернет видео канал  Pro-Shar TV,
+							ежегодная серия турниров Pro-Shar
+							и своя пейнтбольная команда
+							Fighter- Patriot  в Российских сериях
+							и Fighter Pro- Shar в Европейских
+							турнирах.  Команда побеждающая
+							на каждом турнире и уже ставшая
+							чемпионом России. Сотрудничество
+							компании Pro-Shar с федерацией
+							пейнтбола отражено во многих
+							отчетах и материалах.</p>
+						</div>
+						<div class="item">
+							<img src="images/ideology_2.png" alt="Идеология">
+							<p>Компания Pro- Shar является
+							спонсором многих Российских
+							команд, наши логотипы размещены
+							на фирменных джерси. За последний
+							год компания спонсировала ряд
+							благотворительных мероприятийдля воспитанников детских домов,
+							для трудных подростков состоящихна учете в органах внутренних дел,
+							для людей с ограниченными
+							возможностями
+							опорно-двигательногоаппарата и многих других.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end .ideology-->
+
+			<!--Section -3 Maps-->
+			<div class="section maps" id="section3" data-anchor="maps">
+				<div id="map_canvas" style="width: 100%; height: 100%;"></div>
+
+				<!--Diler Window-->
+				<div class="more_diler">
+					<div class="more_diler_container pull-right">
+						<div class="title_maps pull-left">
+							Карта
+						</div>
+						<div class="title_maps pull-right">
+							<div class="show_menu"><img src="images/str.png" alt="Скрыть"> Скрыть</div>
+						</div>
+						<div class="clear"></div>
+						<div class="mobile_item">
+							<div class="town_diler">Пенза</div>
+							<div class="diler_address">
+								<div class="item">
+									<div>Окружная ул., 3, Пенза</div>
+									<div>Пензенская обл.</div>
+								</div>
+								<br>
+								<div class="item">
+									<div>Телефон: <a href="tel:88412995511">8 (841) 299-55-11</a></div>
+									<div>E-Mail: <a href="mailto:contact@proshar.ru">contact@proshar.ru</a></div>
+								</div>	
+							</div>
+						</div>
+						<div class="mobile_item">
+							<div class="contact_form">
+								<form action="">
+									<input type="text" placeholder="Имя">
+									<input type="email" placeholder="E-Mail">
+									<textarea placeholder="Сообщение"></textarea>
+									<input type="submit" value="Отправить" class="btn btn-primary">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#ideology" class="prev_slide button_slide"></a>
+				<a href="#pressroom" class="next_slide button_slide"></a>
+			</div>
+			<!--end .maps-->
+			
+			<!--Sectimaps - 4 Pressroom-->
+			<div class="section pressroom" id="section2" data-anchor="pressroom" data-action-page="pressroom">
+				<div class="bg_section_block bg_section active"></div>
+				<div class="bg_section_block bg_section_chemp"></div>
+				<div class="opacity_section"></div>
+				<div id="galleryCarousel" class="news">
+					<div id="left_sidebar" class="chemp">
+						<div class="left_sidebar">
+							<div class="container">
+								<div class="content_left_sidebar content_left_sidebar_pressroom">
+									<div class="title_tabs" data-action-page="pressroom">Пресс-центер</div>
+									<ul class="nav nav-tabs" role="tablist">
+										<li role="presentation" class="active"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">Новости</a></li>
+										<li role="presentation"><a href="#photo" aria-controls="photo" role="tab" data-toggle="tab">Фотоотчеты</a></li>
+										<li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">Видео</a></li>
+									</ul>
+								</div>
+
+								<div class="content_left_sidebar content_left_sidebar_chempionat" style="display: none;">
+									<div class="title_tabs" data-action-page="chemp">Чемпионат</div>
+									<ul class="nav nav-tabs">
+										<li><a href="#">Каледарь Pro-Shar Cup 2015-2016</a></li>
+										<li><a href="#">Рейтинг</a></li>
+										<li><a href="#" class="md-trigger" data-modal="modal-4">Фильтр</a></li>
+									</ul>
+								</div>
+								
+								<!--Chemp Navigation-->
+								<div class="navigation_chemp custom_navigation">
+									<a class="btn prev prev_button"></a>
+									<div id="owlStatusChemp" class="count_step">
+										<div class="active_step inline_block currentItem">
+											<span class="result_chemp"></span>
+										</div> /
+										<div class="inline_block total_step owlItems">
+											<span class="result_chemp"></span>
+										</div>
+									</div>
+									<a class="btn next next_button"></a>
+								</div>
+								
+								<!--News Navigation-->
+								<div class="navigation_news custom_navigation">
+									<a class="btn prev prev_button"></a>
+									<div id="owlStatusNews" class="count_step">
+										<div class="active_step inline_block currentItem">
+											<span class="result_news"></span>
+										</div> /
+										<div class="inline_block total_step owlItems">
+											<span class="result_news"></span>
+										</div>
+									</div>
+									<a class="btn next next_button"></a>
+								</div>
+								
+								<!--Photo Navigation-->
+								<div class="navigation_photo custom_navigation">
+									<a class="btn prev prev_button"></a>
+									<div id="owlStatusPhoto" class="count_step">
+										<div class="active_step inline_block currentItem">
+											<span class="result_photo"></span>
+										</div> /
+										<div class="inline_block total_step owlItems">
+											<span class="result_photo"></span>
+										</div>
+									</div>
+									<a class="btn next next_button"></a>
+								</div>
+								
+								<!--Video Navigation-->
+								<div class="navigation_video custom_navigation">
+									<a class="btn prev prev_button"></a>
+									<div id="owlStatusVideo" class="count_step">
+										<div class="active_step inline_block currentItem">
+											<span class="result_video"></span>
+										</div> /
+										<div class="inline_block total_step owlItems">
+											<span class="result_video"></span>
+										</div>
+									</div>
+									<a class="btn next next_button"></a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!--Pressroom-->
+					<div class="container item active pressroom_item">
+						<div class="home_content">
+							<div class="content">
+								<div class="tab-content">
+
+									<!--Tab News-->
+									<div role="tabpanel" class="tab-pane active" id="news">
+										<div id="oneNews" class="owl-carousel">
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/bg_1.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-1">подробнее</a>
+											</div>
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/bg_2.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-1">подробнее</a>
+											</div>
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/bg_1.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-1">подробнее</a>
+											</div>
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/bg_2.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-1">подробнее</a>
+											</div>
+										</div>
+										<div class="all_news_button button_bottom">
+											<div class="all_button button">Показать все новости</div>
+										</div>
+									</div>
+									
+									<!--end #news-->
+
+									<!--Tab Photo-->
+									<div role="tabpanel" class="tab-pane" id="photo">
+										<div id="onePhoto" class="owl-carousel">
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/bg_2.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-2">смотреть фотоотчет</a>
+											</div>
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/bg_1.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-2">смотреть фотоотчет</a>
+											</div>
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/bg_2.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-2">смотреть фотоотчет</a>
+											</div>
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/bg_1.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-2">смотреть фотоотчет</a>
+											</div>
+										</div>
+										<div class="all_photo_button button_bottom">
+											<div class="all_button button">Показать все фотоотчеты</div>
+										</div>
+									</div>
+									
+									<!--end #photo-->
+
+									<!--Tab Video-->
+									<div role="tabpanel" class="tab-pane" id="video">
+										<div id="oneVideo" class="owl-carousel">
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/video.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div><img src="images/video.png" alt=""></div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-3">Смотреть видео</a>
+											</div>
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/video_1.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div><img src="images/video.png" alt=""></div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-3">Смотреть видео</a>
+											</div>
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/video.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div><img src="images/video.png" alt=""></div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-3">Смотреть видео</a>
+											</div>
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/video_1.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div><img src="images/video.png" alt=""></div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-3">Смотреть видео</a>
+											</div>
+										</div>
+										<div class="all_video_button button_bottom">
+											<div class="all_button button">Показать все видео</div>
+										</div>
+									</div>
+									
+									<!--end #video-->
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--Chempionat-->
+					<div class="container item chemp_item">
+						<div class="home_content">
+							<div class="content">
+								<div class="tab-content">
+
+									<!--Tab Chemp-->
+									<div class="tab-pane active" id="chemp">
+										<div id="oneChemp" class="owl-carousel">
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/bg_1.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-1">подробнее</a>
+											</div>
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/bg_2.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-1">подробнее</a>
+											</div>
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/bg_1.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-1">подробнее</a>
+											</div>
+											<div class="item">
+												<div class="bg_slide">
+													<img src="images/bg_2.jpg" alt="2й этап серии 'Pro Shar Cup' в Санкт-Петерурге, 21 Ноября - итоги " class="hidden">
+												</div>
+												<div class="big_text">2й этап серии «Pro Shar Cup» в Санкт-Петерурге, 21 Ноября - итоги</div>
+												<a href="#" class="md-trigger read_more" data-modal="modal-1">подробнее</a>
+											</div>
+										</div>
+										<div class="all_chemp_button button_bottom">
+											<div class="all_button button">Таблица конференции</div>
+										</div>
+									</div>
+									<!--end #news-->
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!--All News-->
+
+					<div class="all_news all_list">
+						<div class="owl-carousel">
+							<div class="row item">
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_1.jpg" alt="3-й этап Серии "Pro Shar Cup" В Санкт-Петербурге, 12 декабря">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											3-й этап Серии "Pro Shar Cup" В Санкт-Петербурге, 12 декабря
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-1">подробнее</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - итоги третьей и четвертой лиги">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - итоги третьей и четвертой лиги
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-1">подробнее</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_1.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-1">подробнее</div>
+									</div>
+								</div>
+							</div>
+							<div class="row item">
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_1.jpg" alt="3-й этап Серии "Pro Shar Cup" В Санкт-Петербурге, 12 декабря">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											3-й этап Серии "Pro Shar Cup" В Санкт-Петербурге, 12 декабря
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-1">подробнее</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - итоги третьей и четвертой лиги">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - итоги третьей и четвертой лиги
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-1">подробнее</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_1.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-1">подробнее</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--end .all_news-->
+
+					<!--All Photo-->
+									
+					<div class="all_photo all_list">
+						<div class="owl-carousel">
+							<div class="row item">
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-2">смотреть фотоотчет</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-2">смотреть фотоотчет</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-2">смотреть фотоотчет</div>
+									</div>
+								</div>
+							</div>	
+							<div class="row item">
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-2">смотреть фотоотчет</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-2">смотреть фотоотчет</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-2">смотреть фотоотчет</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<!--end .all_photo-->
+
+					<!--All Video-->
+					<div class="all_video all_list">
+						<div class="owl-carousel">
+							<div class="row item">
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<a href="#" class="open_video md-trigger" data-modal="modal-3">
+											<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+										</a>
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-3">смотреть видео</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<a href="#" class="open_video md-trigger" data-modal="modal-3">
+											<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+										</a>
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-3">смотреть видео</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<a href="#" class="open_video md-trigger" data-modal="modal-3">
+											<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+										</a>
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-3">смотреть видео</div>
+									</div>
+								</div>
+							</div>
+							<div class="row item">
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<a href="#" class="open_video md-trigger" data-modal="modal-3">
+											<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+										</a>
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-3">смотреть видео</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<a href="#" class="open_video md-trigger" data-modal="modal-3">
+											<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+										</a>
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-3">смотреть видео</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<a href="#" class="open_video md-trigger" data-modal="modal-3">
+											<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+										</a>
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-3">смотреть видео</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--end .all_video-->
+
+					<!--All Chemp-->
+
+					<div class="all_chemp all_list">
+						<div class="owl-carousel">
+							<div class="row item">
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_1.jpg" alt="3-й этап Серии "Pro Shar Cup" В Санкт-Петербурге, 12 декабря">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											3-й этап Серии "Pro Shar Cup" В Санкт-Петербурге, 12 декабря
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-1">подробнее</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - итоги третьей и четвертой лиги">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - итоги третьей и четвертой лиги
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-1">подробнее</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_1.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-1">подробнее</div>
+									</div>
+								</div>
+							</div>
+							<div class="row item">
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_1.jpg" alt="3-й этап Серии "Pro Shar Cup" В Санкт-Петербурге, 12 декабря">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											3-й этап Серии "Pro Shar Cup" В Санкт-Петербурге, 12 декабря
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-1">подробнее</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_2.jpg" alt="Первый этап Ice Ball 2015-2016 - итоги третьей и четвертой лиги">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - итоги третьей и четвертой лиги
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-1">подробнее</div>
+									</div>
+								</div>
+								<div class="item col-sm-4">
+									<div class="col-md-6 col-xs-6 table_cell thumbnails">
+										<img src="images/bg_1.jpg" alt="Первый этап Ice Ball 2015-2016 - транисляция третья лига">
+									</div>
+									<div class="col-md-6 col-xs-6 table_cell list_all_content">
+										<div class="data">05/10/15</div>
+										<div class="title_list">
+											Первый этап Ice Ball 2015-2016 - транисляция третья лига
+										</div>
+										<div class="read_more md-trigger" data-modal="modal-1">подробнее</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--end .all_chemp-->
+
+				</div>	
+
+			</div>
+			<!--end .pressroom-->
+
+			<!--Section - 5 Social Responsibility-->
+			<div class="section social_responsibility" id="section4" data-anchor="social_responsibility">
+				<div class="bg_section"></div>
+				<div class="opacity_section"></div>
+				<div class="container text_center">
+					<h3>Социальная отвественность</h3>
+					<div>Шары не идеально круглой формы и у всех из них есть шов. Он расположен экваториальнои в месте шва диаметр шара больше. А возле полюсов он меньше. Нельзя определить точный
+					размер шара, потому что он варьирует у разных партий и даже у разных шаров в одной партии.
+					Даже лучшие производители шаров не всегда выпускают шары такого высокого качества, какое
+					необходимо. Иногда выпускаются серии слишком маленьких шаров, или слишком больших;
+					слишком твердых или слишком мягких; поэтому при покупке шаров нужно быть внимательным.</div>
+					<a href="#" class="read_more">подробнее</a>
+				</div>
+			</div>
+			<!--end .social_responsibility-->
+
+			<!--Section - 6 Products-->
+			<div class="section products" id="section5" data-anchor="products">
+				<div class="container product_container">
+					<div class="table">
+						<div class="table_cell">
+							<h3>Продукция</h3>
+							<div class="left_sidebar">
+								<div class="container">	
+									<!--Product Navigation-->
+									<div class="navigation_product custom_navigation">
+										<a class="btn prev prev_button"></a>
+										<div id="owlStatusProduct" class="count_step">
+											<div class="active_step inline_block currentItem">
+												<span class="result_product"></span>
+											</div> /
+											<div class="inline_block total_step owlItems">
+												<span class="result_product"></span>
+											</div>
+										</div>
+										<a class="btn next next_button"></a>
+									</div>
+									
+								</div>
+							</div>
+
+							<div class="home_content">
+								<div class="content">
+
+										<!--Product-->
+									<div id="oneProduct" class="owl-carousel">
+										<div class="item">
+											<div class="col-sm-5 col-md-6 col-lg-6 product_image">
+												<img src="images/product_1.png" alt="PROSHAR Premium">
+											</div>
+											<div class="col-sm-7 col-md-6 col-lg-6 product_content">
+												<h4>PROSHAR Skirmish Black</h4>
+												<div class="product_desc">
+													Pro Ice - это абсолютно новый продукт, разработанный для игры в пейнтбол в зимний период. Усиленная оболочка  сохраняет свойства шара при отрицательных температурах, что позволяет играть при любой погоде. Яркий, флуоресцентный  наполнитель сохраняет свою консистенцию и не оставит попадание не замеченным. Шары Pro Ice протестированы одной из лучших команд России и Европы "Полярные Медведи" в суровых условиях в г. Тарко Сале, что всего в 100 км от полярного круга.
+													  Pro Ice показал себя как наилучших шар для пейнтбола в зимний период
+												</div>
+												<div class="product_data">
+													<div class="inline_block product_price price_val">2800 <span>₽</span></div>
+													<div class="inline_block">
+														<input type="number" value="5" class="styleform">
+													</div>
+													<div class="inline_block">
+														<a href="#" class="button add_to_cart">Купить</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="col-sm-5 col-md-6 col-lg-6 product_image">
+												<img src="images/product_2.png" alt="PROSHAR Premium">
+											</div>
+											<div class="col-sm-7 col-md-6 col-lg-6 product_content">
+												<h4>PROSHAR TOURNAMENT</h4>
+												<div class="product_desc">
+													Pro Ice - это абсолютно новый продукт, разработанный для игры в пейнтбол в зимний период. Усиленная оболочка  сохраняет свойства шара при отрицательных температурах, что позволяет играть при любой погоде. Яркий, флуоресцентный  наполнитель сохраняет свою консистенцию и не оставит попадание не замеченным. Шары Pro Ice протестированы одной из лучших команд России и Европы "Полярные Медведи" в суровых условиях в г. Тарко Сале, что всего в 100 км от полярного круга.
+													  Pro Ice показал себя как наилучших шар для пейнтбола в зимний период
+												</div>
+												<div class="product_data">
+													<div class="inline_block product_price price_val">2800 <span>₽</span></div>
+													<div class="inline_block">
+														<input type="number" value="5" class="styleform">
+													</div>
+													<div class="inline_block">
+														<a href="#" class="button add_to_cart">Купить</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="col-sm-5 col-md-6 col-lg-6 product_image">
+												<img src="images/product_3.png" alt="PROSHAR Premium">
+											</div>
+											<div class="col-sm-7 col-md-6 col-lg-6 product_content">
+												<h4>PRO ICE</h4>
+												<div class="product_desc">
+													Pro Ice - это абсолютно новый продукт, разработанный для игры в пейнтбол в зимний период. Усиленная оболочка  сохраняет свойства шара при отрицательных температурах, что позволяет играть при любой погоде. Яркий, флуоресцентный  наполнитель сохраняет свою консистенцию и не оставит попадание не замеченным. Шары Pro Ice протестированы одной из лучших команд России и Европы "Полярные Медведи" в суровых условиях в г. Тарко Сале, что всего в 100 км от полярного круга.
+													  Pro Ice показал себя как наилучших шар для пейнтбола в зимний период
+												</div>
+												<div class="product_data">
+													<div class="inline_block product_price price_val">2800 <span>₽</span></div>
+													<div class="inline_block">
+														<input type="number" value="5" class="styleform">
+													</div>
+													<div class="inline_block">
+														<a href="#" class="button add_to_cart">Купить</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="col-sm-5 col-md-6 col-lg-6 product_image">
+												<img src="images/product_4.png" alt="PROSHAR Premium">
+											</div>
+											<div class="col-sm-7 col-md-6 col-lg-6 product_content">
+												<h4>PROSHAR Premium</h4>
+												<div class="product_desc">
+													Pro Ice - это абсолютно новый продукт, разработанный для игры в пейнтбол в зимний период. Усиленная оболочка  сохраняет свойства шара при отрицательных температурах, что позволяет играть при любой погоде. Яркий, флуоресцентный  наполнитель сохраняет свою консистенцию и не оставит попадание не замеченным. Шары Pro Ice протестированы одной из лучших команд России и Европы "Полярные Медведи" в суровых условиях в г. Тарко Сале, что всего в 100 км от полярного круга.
+													  Pro Ice показал себя как наилучших шар для пейнтбола в зимний период
+												</div>
+												<div class="product_data">
+													<div class="inline_block product_price price_val">2800 <span>₽</span></div>
+													<div class="inline_block">
+														<input type="number" value="5" class="styleform">
+													</div>
+													<div class="inline_block">
+														<a href="#" class="button add_to_cart">Купить</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--All Product-->
+							<div class="all_product_button button_bottom">
+								<div class="all_button button">Показать все продукты</div>
+							</div>
+							<div class="all_product all_list">
+								<div class="row">
+									<div class="col-sm-3" data-owl="0">
+										<div class="text_center">
+											<img src="images/product_1.png" alt="">
+										</div>
+										<div>
+											<h4>PROSHAR Skirmish Black</h4>
+											<a href="#" class="more_product">подробнее</a>
+										</div>
+									</div>
+									<div class="col-sm-3" data-owl="1">
+										<div class="text_center">
+											<img src="images/product_3.png" alt="">
+										</div>
+										<div>
+											<h4>PROSHAR TOURNAMENT</h4>
+											<a href="#" class="more_product">подробнее</a>
+										</div>
+									</div>
+									<div class="col-sm-3" data-owl="2">
+										<div class="text_center">
+											<img src="images/product_2.png" alt="">
+										</div>
+										<div>
+											<h4>PRO ICE</h4>
+											<a href="#" class="more_product">подробнее</a>
+										</div>
+									</div>
+									<div class="col-sm-3" data-owl="3">
+										<div class="text_center">
+											<img src="images/product_4.png" alt="">
+										</div>
+										<div>
+											<h4>PROSHAR Premium</h4>
+											<a href="#" class="more_product">подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--end .all_product-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end #content-->
+		</div>
+		<!--end .products-->
+
+		<!--Section - 7 Cart-->
+			
+
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 footer_link">
+						<a href="#">
+							<span>Выпустить шары под вашим брендом</span>
+						</a>
+					</div>
+					<div class="col-md-6 footer_social">
+						<ul class="pull-right">
+							<li>
+								<a href="#">
+									<img src="images/vk.png" alt="Вконтакте">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/fb.png" alt="Facebook">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/youtube.png" alt="Youtube">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!--end #page-->
+
+	<!--Modal-->
+
+	<!--Modal 1  News Detals-->
+	<div class="md-modal md-effect-1" id="modal-1">
+		<div class="md-content md-content-news">
+			<div class="row">
+				<div class="col-md-6 col-xs-6 table_cell thumbnails">
+					<img src="images/bg_1.jpg" alt="">
+				</div>
+				<div class="col-md-6 col-xs-6 table_cell modal_desc">
+					<div class="modal_desc_content">
+						<div class="data pull-left">05/10/15</div>
+						<div class="close_modal pull-right"><img src="images/close_news.png" alt="Закрыть"></div>
+						<div class="clear"></div>
+						<div class="title_list">
+							Состоялся 1й этап Самарского Областного чемпионата "Зимняя серия"
+						</div>
+						<div class="content_news">
+							<p>Санкт-Петербург. город, Российская Федерация Pro-Shar Cup, Северо-Запад. Сезон 2015-16г. Пейнтбольный клуб «Biggames» и Федерация пэйнтбола ЛО представляют вашему вниманию 3-й этап серии «Pro Shar Cup» в Санкт-Петербурге, 12 декабря 2015г.</p>
+							<p>Спонсор и партнеры серии:<br>
+							Компания «Pro Shar»<br>
+							Пейнтбольный клуб «Biggames»<br>
+							<ol>
+								<li>Цели и задачи
+									<ol>
+										<li>Серия турниров «Pro Shar Cup» по спортивному пейнтболу проводится с целью:
+											<ul>
+												<li>развития и популяризации игры в пейнтбол как вида спорта</li>
+												<li>пропаганды здорового образа жизни</li>
+												<li>проведения турниров на максимально высоком уровне</li>
+											</ul>
+										</li>
+										<li>Соревнования призваны решать задачи:
+											<ul>
+												<li>дальнейшего совершенствования тактико-технического мастерства участников</li>
+												<li>обмена опытом между игроками и судьями</li>
+												<li>формирования рейтинга команд</li>
+											</ul>
+										</li>
+									</ol>
+								</li>
+							</ol>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, debitis, maxime. Tenetur consequatur cum fugiat consectetur facere voluptatem, cupiditate sed cumque tempora impedit culpa, corporis magni reiciendis provident, nam ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iure debitis, possimus alias delectus architecto nulla quasi dolore, maxime saepe rerum! Fuga aspernatur impedit cum, cupiditate consequuntur ea a, distinctio.</p>
+						</div>
+					
+						<div class="row social_and_comment">
+							<div class="col-md-6 col-xs-6">
+								<!-- Put this script tag to the <head> of your page -->
+								<script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+
+								<script type="text/javascript">
+								  VK.init({apiId: 5289701, onlyWidgets: true});
+								</script>
+
+								<!-- Put this div tag to the place, where the Like block will be -->
+								<div id="vk_like" class="inline_block"></div>
+								<script type="text/javascript">
+								VK.Widgets.Like("vk_like", {type: "button"});
+								</script>
+								<!-- Load Facebook SDK for JavaScript -->
+								<div id="fb-root"></div>
+								<script>(function(d, s, id) {
+								  var js, fjs = d.getElementsByTagName(s)[0];
+								  if (d.getElementById(id)) return;
+								  js = d.createElement(s); js.id = id;
+								  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.5&appId=871847039563530";
+								  fjs.parentNode.insertBefore(js, fjs);
+								}(document, 'script', 'facebook-jssdk'));</script>
+
+								<div class="fb-like inline_block" data-colorscheme="dark" data-href="http://proshar.beta-dev.ru/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+							</div>
+							<div class="col-md-6 col-xs-6">
+								<div class="comment_link">Комментарии <span>(5)</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end #modal-1-->
+
+	<!--Modal 2  Photo Detals-->
+	<div class="md-modal md-effect-1" id="modal-2">
+		<div class="md-content md-content-photo">
+			<div class="row">
+				<div class="container modal_photo_link">
+					<div class="close_modal pull-right"><img src="images/top_bar_1.png" alt="Закрыть"></div>
+					<div class="pull-right download_album">
+						<a href="#">cкачать альбом</a>
+					</div>
+				</div>
+				<div class="image_home">
+					<div id="sync1" class="owl-carousel">
+						<div class="item">
+							<img src="images/bg_1.jpg" alt="">
+						</div>
+						<div class="item thum">
+							<img src="images/bg_2.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="images/test_vertical.png" alt="">
+						</div>
+						<div class="item">
+							<img src="images/bg_2.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="images/bg_1.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="images/bg_2.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="images/bg_1.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="images/bg_2.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="images/bg_1.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="images/bg_2.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="images/bg_1.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="images/bg_2.jpg" alt="">
+						</div>
+					</div>
+					<div class="navigation_sync_1 custom_navigation">
+						<a class="btn prev prev_button"></a>
+						<div id="owlStatusSync1" class="count_step">
+							<div class="active_step inline_block currentItem">
+								<span class="result_sync_1"></span>
+							</div> /
+							<div class="inline_block total_step result owlItems">
+								<span class="result_sync_1"></span>
+							</div>
+						</div>
+						<a class="btn next next_button"></a>
+					</div>
+				</div>
+
+				<div class="image_thumb">
+					<div id="sync2" class="owl-carousel">
+						<div class="row item">
+							<div class="item col-xs-2 col-xs-6 thumbnails" data-owl="0">
+								<img src="images/bg_1.jpg" alt="">
+							</div>
+							<div class="item col-xs-2 col-xs-6 thumbnails" data-owl="1">
+								<img src="images/bg_2.jpg" alt="">
+							</div>
+							<div class="item col-xs-2 col-xs-6 thumbnails" data-owl="2">
+								<img src="images/test_vertical.png" alt="">
+							</div>
+							<div class="item col-xs-2 col-xs-6 thumbnails" data-owl="3">
+								<img src="images/bg_2.jpg" alt="">
+							</div>
+							<div class="item col-xs-2 col-xs-6 thumbnails" data-owl="4">
+								<img src="images/bg_1.jpg" alt="">
+							</div>
+							<div class="item col-xs-2 col-xs-6 thumbnails" data-owl="5">
+								<img src="images/bg_2.jpg" alt="">
+							</div>
+						</div>
+						<div class="row item">
+							<div class="item col-xs-2 col-xs-6 thumbnails" data-owl="6">
+								<img src="images/bg_1.jpg" alt="">
+							</div>
+							<div class="item col-xs-2 col-xs-6 thumbnails" data-owl="7">
+								<img src="images/bg_2.jpg" alt="">
+							</div>
+							<div class="item col-xs-2 col-xs-6 thumbnails" data-owl="8">
+								<img src="images/bg_1.jpg" alt="">
+							</div>
+							<div class="item col-xs-2 col-xs-6 thumbnails" data-owl="9">
+								<img src="images/bg_2.jpg" alt="">
+							</div>
+							<div class="item col-xs-2 col-xs-6 thumbnails" data-owl="10">
+								<img src="images/bg_1.jpg" alt="">
+							</div>
+							<div class="item col-xs-2 col-xs-6 thumbnails" data-owl="11">
+								<img src="images/bg_2.jpg" alt="">
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end #modal-2-->
+
+	<!--Modal 3  Video Detals-->
+	<div class="md-modal md-effect-1" id="modal-3">
+		<div class="md-content md-content-video">
+				<div class="top_bar_video">
+					<div class="pull-left">
+						СИ "Мафия. Ограбление."
+					</div>
+					<div class="pull-right">
+						<a href="#" class="inline_block">
+							<img src="images/top_bar_3.png" alt="">
+						</a>
+						<a href="#" class="inline_block">
+							<img src="images/top_bar_2.png" alt="">
+						</a>
+						<a href="#" class="close_modal inline_block">
+							<img src="images/top_bar_1.png" alt="">
+						</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Vvv2bdoAGC0?showinfo=0&autohide=1" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<!--end #modal-3-->
+
+	<!--Modal 4  Filter Detals-->
+	<div class="md-modal md-effect-1" id="modal-4">
+		<div class="close_modal pull-right"><img src="images/top_bar_1.png" alt="Закрыть"></div>
+		<div class="md-content md-content-filter">
+			<div class="container">
+				<div class="big_text_modal">Выберите событие</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<select class="event_select">
+							<option value="1">Северо-западная Конференция</option>
+							<option value="2">Уральская Конференция</option>
+							<option value="3">Сибирская Конференция</option>
+							<option value="4">Южная Конференция</option>
+							<option value="5">Беларуская Конференция</option>
+							<option value="6">Центральная Конференция</option>
+							<option value="7">Поволжская Конференция</option>
+						</select>
+					</div>
+					<div class="col-sm-4">
+						<select class="event_select">
+							<option value="1">Серия</option>
+							<option value="2">Серия 1</option>
+							<option value="2">Серия 2</option>
+							<option value="2">Серия 3</option>
+						</select>
+					</div>
+					<div class="col-sm-4">
+						<select class="event_select">
+							<option value="2">Мероприятие</option>
+							<option value="2">Мероприятие 1</option>
+							<option value="2">Мероприятие 2</option>
+							<option value="2">Мероприятие 3</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4">
+						<a href="#" class="button bitton_modal_4">Показать</a>
+					</div>
+					<div class="col-sm-4"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end #modal-4-->
+
+	<div class="md-overlay"></div>
+
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<!-- Include js plugin -->  
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+
+<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="js/wSelect.min.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+	<div class="rg-image-wrapper">
+		{{if itemsCount > 1}}
+			<div class="rg-image-nav">
+				<a href="#" class="rg-image-nav-prev">Previous Image</a>
+				<a href="#" class="rg-image-nav-next">Next Image</a>
+			</div>
+		{{/if}}
+		<div class="rg-image"></div>
+		<div class="rg-loading"></div>
+		<div class="rg-caption-wrapper">
+			<div class="rg-caption" style="display:none;">
+				<p></p>
+			</div>
+		</div>
+	</div>
+</script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/home.js"></script>
+<script>function mapsModal () {
+		$('.more_diler').addClass('open');
+		$('footer').addClass('z_minus');
+	}
+	$('.gm-style-iw').siblings().addClass("remove_bg");</script>
+</html>

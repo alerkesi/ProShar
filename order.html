@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Pro Shar</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/jquery.fullPage.css"  rel="stylesheet" />
+	<!-- OWL Carousel -->
+	<link href="css/owl.carousel.css" rel="stylesheet" />
+	<link href="css/owl.theme.css" rel="stylesheet" />
+	<link href="css/wSelect.css" rel="stylesheet" />
+	<link href="css/jquery.formstyler.css" rel="stylesheet"  />
+	<link href="css/jquery.jscrollpane.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="page">
+
+	<!--Preloader-->
+	<div id="preloader">
+		<div id="pre-block"><img src="images/three-dots.svg" alt=""></div>
+	</div>
+	<!--end #preloader-->
+
+	<!--Page-->
+	<div id="page">
+
+		<!--Header-->
+		<header id="header" class="black navigation">
+			<div class="container">
+				<!--Top block-->
+				<div id="top_block" class="row">
+
+					<div class="col-md-4 col-xs-6 logo">
+						<a href="#"></a>
+					</div>
+
+					<div class="col-md-4 col-xs-6 header_info pull-right">
+						<div class="inline_block phone">
+							<a href="tel:88007442974">8 (800) 744-29-74</a>
+						</div>
+						<div class="inline_block lang_select">
+							<select name="lang" class="lang">
+								<option value="rus">Rus</option>
+								<option value="eng">Eng</option>
+							</select>
+						</div>
+						<div class="inline_block menu_button">
+							<div class="inline_block">меню</div>
+							<div class="inline_block menu_bar">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div id="hide_modal" class="read_more">
+							<img src="images/str.png" alt="ОБратно">обратно
+						</div>
+						<div id="hide_modal_video" class="read_more">
+							<img src="images/top_bar_1.png" alt="Закрыть">
+						</div>
+						<div id="donwload_image">
+							<a href="#" class="inline_block read_more">скачать</a>
+							<a href="#" class="inline_block hide_image">
+								<img src="images/top_bar_1.png" alt="Закрыть">
+							</a>
+						</div>
+						<div class="clear"></div>
+						<div class="mini_cart select">
+							<div class="mini_cart_link">
+								<span class="minicart_title">Корзина</span>
+								<span class="minicart_title_regist">Alexey Semenov</span>
+								<span class="minicart_count">3</span>
+							</div>
+							<div id="cart" class="drop cart">
+								<div class="cart_product_list">
+									<div class="row">
+										<div class="col-xs-6 product_image_cart text_center">
+											<img src="images/product_1.png" alt="">
+										</div>
+										<div class="col-xs-6 product_content_cart">
+											<div class="prodict_name">PROSHAR Premium</div>
+											<div class="count_input_minicart">
+												<input type="number" value="5" class="styleform">
+											</div>
+											<div class="minicart_product_price price_val price_val ">2800 <span>₽</span></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 product_image_cart text_center">
+											<img src="images/product_2.png" alt="">
+										</div>
+										<div class="col-xs-6 product_content_cart">
+											<div class="prodict_name">PROSHAR Premium</div>
+											<div class="count_input_minicart">
+												<input type="number" value="5" class="styleform">
+											</div>
+											<div class="minicart_product_price price_val price_val">2800 <span>₽</span></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 product_image_cart text_center">
+											<img src="images/product_3.png" alt="">
+										</div>
+										<div class="col-xs-6 product_content_cart">
+											<div class="prodict_name">PROSHAR Premium</div>
+											<div class="count_input_minicart">
+												<input type="number" value="5" class="styleform">
+											</div>
+											<div class="minicart_product_price price_val price_val">2800 <span>₽</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="bottom_minicart text_center">
+									<div class="total_mimicart">Всего: <span class="total_mimicart_count">2800 <span>₽</span></span></div>
+									<div class="minicart_button">
+										<a href="#cart" class="button order_button">Оформить заказ</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+
+					<div class="col-md-4 col-xs-12 count_shar">
+						<div class="count_shar_info">Произведено шаров</div>
+						<div class="counter">
+							<span id="k-12">0</span>
+							<span id="k-11">0</span>
+							<span id="k-10">2</span>
+							<span id="k-9">7</span>
+							<span id="k-8">8</span>
+							<span id="k-7">1</span>
+							<span id="k-6">4</span>
+							<span id="k-5">0</span>
+							<span id="k-4">7</span>
+							<span id="k-3">6</span>
+							<span id="k-2">6</span>
+							<span id="k-1">2</span>
+						</div>
+					</div>
+				</div>
+				<!--end #top_block-->
+
+				<div class="clear"></div>
+			</div>
+
+		</header>
+		<!--end #header-->
+
+		<!--Menu-->
+		<div id="menu">
+			<div class="menu_scroll">
+				<div class="row">
+					<div class="col-xs-6 logo_menu visible-xs">
+						<a href="#">
+							<img src="images/logo_white.png" alt="Pro Shar">
+						</a>
+						<div class="menu_phone">
+							<a href="tel:88007442974">8 (800) 744-29-74</a>
+						</div>
+					</div>
+					<div class="col-md-12 col-xs-6 show_menu_block">
+						<div class="show_menu">Скрыть<img src="images/str.png" alt="Скрыть"></div>
+						<div class="lang_men visible-xs">
+							<div class="abs_input">
+								<input type="radio" name="lang" value="Rus" checked="checked">
+								<label>Rus</label>
+							</div>
+							<div class="abs_input">
+								<input type="radio" name="lang" value="Eng">
+								<label>Eng</label>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<nav>
+					<ul>
+						<li><a href="/#home">О компании</a></li>
+						<li><a href="/#ideology">Идеология</a></li>
+						<li><a href="/#maps">Карта</a></li>
+						<li><a href="/#pressroom">Пресс-центер</a></li>
+						<li><a href="/#social_responsibility">Социальная отвественность</a></li>
+						<li><a href="/#products">Продукция</a></li>
+					</ul>
+				</nav>
+				<div class="account_link">
+					<ul>
+						<li><a href="/private_office.html" class="private_office_link">Личный кабинет</a></li>
+						<li><a href="#">Обратная свазь</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--end #menu-->
+
+
+		<!--Content-->	
+		<div id="content">
+
+			<!--Cart-->
+
+			<div class="cart" id="section6">
+				<div class="container scroll-pane" id="scroll_block">
+		
+					<!--Login Form-->
+					<div class="login_form">
+						<div class="login_title text_center">Вход</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<label>ФИО <span class="red">*</span></label>
+							</div>
+							<div class="col-sm-9">
+								<input type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<label>E-Mail <span class="red">*</span></label>
+							</div>
+							<div class="col-sm-9">
+								<input type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-xs-6 regist_link_block">
+								<a href="#" class="regist_link">Зарегистрироваться</a>
+							</div>
+							<div class="col-sm-6 col-xs-6 text_right login_button_block">
+								<input type="submit" class="btn btn-primary login_button pull-right" value="Войти">
+								<a href="#" class="reset_pass">Забыли пароль?</a>
+							</div>
+						</div>
+						<div class='login_soc_network'>
+							<div class="login_soc_network_title">Войти через</div>
+							<hr>
+							<div class="row">
+								<div class="col-sm-6">
+									<a href="#" class="btn btn_facebook">Facebook</a>
+								</div>
+								<div class="col-sm-6">
+									<a href="#" class="btn btn_vk">Вконтакте</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--Register Form-->
+					<div class="register_form">
+						<div class="login_title text_center">Регистрация</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<label>ФИО <span class="red">*</span></label>
+							</div>
+							<div class="col-sm-9">
+								<input type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<label>E-Mail <span class="red">*</span></label>
+							</div>
+							<div class="col-sm-9">
+								<input type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<label>Телефон <span class="red">*</span></label>
+							</div>
+							<div class="col-sm-9">
+								<input type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<label>Индекс <span class="red">*</span></label>
+							</div>
+							<div class="col-sm-9">
+								<input type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 ready_if">
+								<input type="checkbox" name="ready" class="checkbox_form">
+								<label>Согласен с условиями договора</label>
+							</div>
+							<div class="col-sm-6 text_right">
+								<input type="submit" class="btn btn-primary regist_button pull-right" value="Создать аккаунт">
+							</div>
+						</div>
+						<div class='login_soc_network'>
+							<div class="login_soc_network_title">Войти через</div>
+							<hr>
+							<div class="row">
+								<div class="col-sm-6">
+									<a href="#" class="btn btn_facebook">Facebook</a>
+								</div>
+								<div class="col-sm-6">
+									<a href="#" class="btn btn_vk">Вконтакте</a>
+								</div>
+							</div>
+							<div class="text_center">
+								<a href="#" class="regist_link ready_account">У меня уже есть аккаунт</a>
+							</div>
+						</div>
+					</div>
+					<div id="scroll_1">
+					<div id="scroll">
+						<ul class="nav nav-tabs">
+							<li class="active col-sm-3 col-xs-3"><a href="#cart_list" data-toggle="tab">Корзина</a></li>
+							<li class="col-sm-3 col-xs-3"><a href="#data" data-toggle="tab">Данные</a></li>
+							<li class="col-sm-3 col-xs-3"><a href="#checkout" data-toggle="tab">Оплата</a></li>
+							<li class="col-sm-3 col-xs-3"><a href="#orders" data-toggle="tab">Мои заказы</a></li>
+						</ul>
+					</div>
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="cart_list">
+							
+							<table>
+								<thead>
+									<tr>
+										<th>Товар</th>
+										<th class="text_left">Название</th>
+										<th class="th_count">Кол-во</th>
+										<th class="th_price">Цена</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="table_product_image">
+											<img src="images/product_1.png" alt="">
+										</td>
+										<td class="table_product_name">
+											PROSHAR Premium
+										</td>
+										<td class="table_product_count">
+											<input type="number" value="5" class="styleform">
+										</td>
+										<td class="table_product_price price_val price_val">
+											2800 <span>₽</span>
+										</td>
+										<td class="table_product_remove">
+											<a href="#"><img src="images/close.png" alt=""></a>
+										</td>
+									</tr>
+									<tr>
+										<td class="table_product_image">
+											<img src="images/product_2.png" alt="">
+										</td>
+										<td class="table_product_name">
+											PROSHAR TOURNAMENT
+										</td>
+										<td class="table_product_count">
+											<input type="number" value="5" class="styleform">
+										</td>
+										<td class="table_product_price price_val price_val">
+											2800 <span>₽</span>
+										</td>
+										<td class="table_product_remove">
+											<a href="#"><img src="images/close.png" alt=""></a>
+										</td>
+									</tr>
+									<tr>
+										<td class="table_product_image">
+											<img src="images/product_3.png" alt="">
+										</td>
+										<td class="table_product_name">
+											PROSHAR Skirmish Black
+										</td>
+										<td class="table_product_count">
+											<input type="number" value="5" class="styleform">
+										</td>
+										<td class="table_product_price price_val price_val">
+											2800 <span>₽</span>
+										</td>
+										<td class="table_product_remove">
+											<a href="#"><img src="images/close.png" alt=""></a>
+										</td>
+									</tr>
+									<tr>
+										<td class="table_product_image">
+											<img src="images/product_4.png" alt="">
+										</td>
+										<td class="table_product_name">
+											PRO ICE
+										</td>
+										<td class="table_product_count">
+											<input type="number" value="5" class="styleform">
+										</td>
+										<td class="table_product_price price_val price_val">
+											2800 <span>₽</span>
+										</td>
+										<td class="table_product_remove">
+											<a href="#"><img src="images/close.png" alt=""></a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="tabe_pane_button">	
+								<a class="btn btn-default close_modal pull-left">Назад</a>
+								<a class="btn btn-primary btnNext pull-right">Дальше</a>
+								<div class="inline_block cart_total_price price_val pull-right">Всего <span>2800 <span>₽</span></span></div>
+								<div class="clear"></div>
+							</div>
+
+						</div>
+						<div class="tab-pane" id="data">
+							<div class="data_table">
+								<form action="">
+									<table>
+										<tbody>
+											<tr>
+												<td class="name_td">Тип плательщика</td>
+												<td class="value_td text_center">
+													<div class="inline_block">
+														<input type="radio" class="form_radio" name="radio">
+														<label>Физическое лицо</label>
+													</div>
+													<div class="inline_block">
+														<input type="radio" class="form_radio" name="radio">
+														<label>Юридическое лицо</label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="name_td">ФИО <span class="red">*</span></td>
+												<td class="value_td">
+													<input type="text" class="input_form">
+												</td>
+											</tr>
+											<tr>
+												<td class="name_td">Email <span class="red">*</span></td>
+												<td class="value_td">
+													<input type="text" class="input_form">
+												</td>
+											</tr>
+											<tr>
+												<td class="name_td">Телефон <span class="red">*</span></td>
+												<td class="value_td">
+													<input type="text" class="input_form">
+												</td>
+											</tr>
+											<tr>
+												<td class="name_td">Индекс <span class="red">*</span></td>
+												<td class="value_td">
+													<input type="text" class="input_form">
+												</td>
+											</tr>
+											<tr>
+												<td class="name_td">Местоположение <span class="red">*</span></td>
+												<td class="value_td">
+													<input type="text" class="input_form">
+												</td>
+											</tr>
+											<tr class="buffer_20">
+												<td class="name_td">Адрес доставки<span class="red">*</span></td>
+												<td class="value_td">
+													<select class="select_form" data-placeholder="Выберите адрес">
+														<option value="">Адрес</option>
+														<option value="">Адрес 1</option>
+														<option value="">Адрес 2</option>
+													</select>
+													<textarea class="input_form" placeholder="Указать другой"></textarea>
+												</td>
+											</tr>
+											<tr class="buffer_20">
+												<td class="name_td">Служба доставки</td>
+												<td class="value_td">
+													
+												</td>
+											</tr>
+											<tr class="buffer_20">
+												<td class="name_td">Курьером</td>
+												<td class="name_td">
+													<table class="sub_table">
+														<thead>
+															<tr>
+																<th></th>
+																<th></th>
+																<th>дней</th>
+																<th>с предоплатой заказа</th>
+																<th>с оплатой при получение</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_1.png" alt="">
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">EMS Почта России</div>
+																</td>
+																<td class="sub_table_day"></td>
+																<td class="sub_table_price_1 price_val">
+																	<span class="gray">Бесплатно</span>
+																</td>
+																<td class="sub_table_price_2 price_val">763 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_2.png" alt="">
+																	
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">Почта России</div>
+																</td>
+																<td class="sub_table_day">1-2</td>
+																<td class="sub_table_price_1 price_val">260 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val">451 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_3.png" alt="">
+																	
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">DPD (parcel)</div>
+																</td>
+																<td class="sub_table_day"></td>
+																<td class="sub_table_price_1 price_val">260 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val">480 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_2.png" alt="">
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">Почта России</div>
+																	<div class="green">со страховкой</div>
+																</td>
+																<td class="sub_table_day">1-2</td>
+																<td class="sub_table_price_1 price_val">260 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val">2800 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_4.png" alt="">
+																	
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">СДЭК(посылка)</div>
+																</td>
+																<td class="sub_table_day">1</td>
+																<td class="sub_table_price_1 price_val">270 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val"></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_3.png" alt="">
+																	
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">DPD (parcel)</div>
+																	<div class="green">со страховкой</div>
+																</td>
+																<td class="sub_table_day"></td>
+																<td class="sub_table_price_1 price_val">280 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val">480 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_4.png" alt="">
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">СДЭК(посылка)</div>
+																	<div class="green">со страховкой</div>
+																</td>
+																<td class="sub_table_day">1</td>
+																<td class="sub_table_price_1 price_val">290 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val"></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_5.png" alt="">
+																	
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">Boxberry</div>
+																</td>
+																<td class="sub_table_day">1</td>
+																<td class="sub_table_price_1 price_val">290 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val">400 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_4.png" alt="">
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">СДЭК(экспресс)</div>
+																</td>
+																<td class="sub_table_day">1</td>
+																<td class="sub_table_price_1 price_val">300 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val"></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_3.png" alt="">
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">DPD (classic)</div>
+																</td>
+																<td class="sub_table_day"></td>
+																<td class="sub_table_price_1 price_val">420 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val">640 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_3.png" alt="">
+																	
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">DPD (classic)</div>
+																	<div class="green">со страховкой</div>
+																</td>
+																<td class="sub_table_day"></td>
+																<td class="sub_table_price_1 price_val">430 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val">640 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_3.png" alt="">
+																	
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">DPD (consumer)</div>
+																</td>
+																<td class="sub_table_day"></td>
+																<td class="sub_table_price_1 price_val">440 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val">670 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_3.png" alt="">
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">DPD (consumer)</div>
+																	<div class="green">со страховкой</div>
+																</td>
+																<td class="sub_table_day"></td>
+																<td class="sub_table_price_1 price_val">460 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val">670 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_4.png" alt="">
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">СДЭК(экспресс)</div>
+																	<div class="green">со страховкой</div>
+																</td>
+																<td class="sub_table_day">1</td>
+																<td class="sub_table_price_1 price_val">600 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val"></td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr class="buffer_20">
+												<td class="name_td">До подъезда</td>
+												<td class="value_td">
+													<div class="td_desc">Выгрузка и подъем на этаж не входят в стоимость!
+													Оплачивать доставку необходимо самостоятельно при получении в офисе ТК.
+													Стоимость доставки ориентировочная и на момент оплаты может измениться!
+													</div>
+													<table class="sub_table">
+														<tbody>
+															<tr>
+																<td class="sub_table_company sub_table_company_1">
+																	<input type="radio" class="form_radio" name="name_3">
+																	<img src="images/company_6.png" alt="">
+																	
+																</td>
+																<td class="sub_table_name_company sub_table_name_company_1">
+																	<div class="inline_block">Деловые линии</div>
+																	<div class="td_desc">+50 руб. за доставкудо склада транспортнойкомпании (включается в заказ)
+																	</div>
+																	<div class="green">со страховкой</div>
+																</td>
+
+																<td class="sub_table_price_3 price_val">580 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company sub_table_company_1">
+																	<input type="radio" class="form_radio" name="name_3">
+																	<img src="images/company_6.png" alt="">
+																</td>
+																<td class="sub_table_name_company sub_table_name_company_1">
+																	<div class="inline_block">Деловые линии</div>
+																	<div class="green">со страховкой</div>
+																	<div class="td_desc">+50 руб. за доставкудо склада транспортнойкомпании (включается в заказ)
+																	</div>
+																</td>
+																<td class="sub_table_price_3 price_val">655 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company sub_table_company_1">
+																	<input type="radio" class="form_radio" name="name_3">
+																	<img src="images/company_7.png" alt="">
+																	
+																</td>
+																<td class="sub_table_name_company sub_table_name_company_1">
+																	<div class="inline_block">Деловые линии</div>
+																	<div class="td_desc">+50 руб. за доставкудо склада транспортнойкомпании (включается в заказ)
+																	</div>
+																</td>
+																<td class="sub_table_price_3 price_val">700 <span>₽</span></td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr class="buffer_20">
+												<td class="name_td">Почта<span class="red">*</span></td>
+												<td class="value_td">
+													<table class="sub_table">
+														<thead>
+															<tr>
+																<th></th>
+																<th></th>
+																<th>дней</th>
+																<th>с предоплатой заказа</th>
+																<th>с оплатой при получение</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_2.png" alt="">
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">Почта России</div>
+																</td>
+																<td class="sub_table_day">1-2</td>
+																<td class="sub_table_price_1 price_val">150 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val">399 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_2.png" alt="">
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">Почта России</div>
+																</td>
+																<td class="sub_table_day">3</td>
+																<td class="sub_table_price_1 price_val">170 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val">482 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_2.png" alt="">	
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">Почта России</div>
+																	<div class="green">со страховкой</div>
+																</td>
+																<td class="sub_table_day">1-2</td>
+																<td class="sub_table_price_1 price_val">210 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val">399 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_2.png" alt="">
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">Почта России</div>
+																</td>
+																<td class="sub_table_day">2</td>
+																<td class="sub_table_price_1 price_val">280 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val">649 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	<img src="images/company_2.png" alt="">
+																	
+																</td>
+																<td class="sub_table_name_company">
+																	<div class="inline_block">Почта России</div>
+																	<div class="green">со страховкой</div>
+																</td>
+																<td class="sub_table_day">2</td>
+																<td class="sub_table_price_1 price_val">440 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val">649 <span>₽</span></td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr class="buffer_20">
+												<td class="name_td">Другие<br> способы доставки</td>
+												<td class="value_td">
+													<table class="sub_table">
+														<thead>
+															<tr>
+																<th></th>
+																<th></th>
+																<th>дней</th>
+																<th>с предоплатой заказа</th>
+																<th>с оплатой при получение</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																	
+																</td>
+																<td class="sub_table_name_company_2">
+																	<div class="inline_block">СУПдост</div>
+																</td>
+																<td class="sub_table_day"></td>
+																<td class="sub_table_price_1 price_val">200 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val">200 <span>₽</span></td>
+															</tr>
+															<tr>
+																<td class="sub_table_company">
+																	<input type="radio" class="form_radio" name="name_2">
+																</td>
+																<td class="sub_table_name_company_2">
+																	<div class="inline_block">Самовывоз</div>
+																	<div class="td_desc">вы можете самостоятельно забрать заказ из нашего магазина</div>
+																</td>
+																<td class="sub_table_day">3</td>
+																<td class="sub_table_price_1 price_val">100 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val"></td>
+															</tr>
+															<tr>
+																<td class="sub_table_input">
+																	<input type="radio" class="form_radio" name="name_2">
+																</td>
+																<td class="sub_table_name_company_2">
+																	<div class="inline_block">EMS очта России</div>
+																</td>
+																<td class="sub_table_day">1-2</td>
+																<td class="sub_table_price_1 price_val">230 <span>₽</span></td>
+																<td class="sub_table_price_2 price_val"></td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</form>
+							</div>
+							<div class="tabe_pane_button">
+								<a class="btn btn-default btnPrevious pull-left">Назад</a>
+								<a class="btn btn-primary  btnNext pull-right">Дальше</a>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div class="tab-pane" id="checkout">
+							<form action="">
+								<div class="row">
+									<div class="col-sm-4 col-xs-4 pyment_item">
+										<img src="images/payment_1.png" alt="">
+										<div class="inline_block">
+											<div class="inline_block">
+												<input type="radio" name="payment" class="form_radio">
+											</div>
+											<label>Яндекс. Деньги</label>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-4 pyment_item">
+										<img src="images/payment_2.png" alt="">
+										<div class="inline_block">
+											<div class="inline_block">
+												<input type="radio" name="payment" class="form_radio">
+											</div>
+											<label>Банковские карты</label>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-4 pyment_item">
+										<img src="images/payment_3.png" alt="">
+										<div class="inline_block">
+											<div class="inline_block">
+												<input type="radio" name="payment" class="form_radio">
+											</div>
+											<label>Терминалы</label>
+										</div>
+									</div>
+								</div>
+								<div class="payment_list">
+									<div class="table_cell">
+										<input type="radio" name="payment" class="form_radio">
+									</div>
+									<div class="table_cell">
+										<label>Наличные курьеру</label>
+										<p class="td_desc">Оплата наличными при получении заказа курьеру.</p>
+									</div>
+								</div>
+								<div class="payment_list">
+									<div class="table_cell">
+										<input type="radio" name="payment" class="form_radio">
+									</div>
+									<div class="table_cell">
+										<label>Сбербанк</label>
+										<p class="td_desc">Оплата наличными при получении заказа курьеру.</p>
+									</div>
+								</div>
+								<div class="payment_list">
+									<div class="table_cell">
+										<input type="radio" name="payment" class="form_radio">
+									</div>
+									<div class="table_cell">
+										<label>Наложенный платеж</label>
+										<p class="td_desc">Оплата с помощью наложенного платежа</p>
+									</div>
+								</div>
+							</form>
+							<div class="tabe_pane_button">
+								<a class="btn btn-default btnPrevious pull-left">Назад</a>
+								<a class="btn btn-primary  btnNext pull-right">Дальше</a>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div class="tab-pane" id="orders">
+							<ul class="my_orders_list">
+								<li><a href="#" class="all_orders">Посмотреть все заказы</a></li>
+								<li><a href="#" class="read_more_status_list">Посмотреть статусы заказов</a></li>
+								<li><a href="#">Изменить личные данные</a></li>
+							</ul>
+							<div class="orders_block orders_block_1">
+								<div class="close_order_block text_right button">
+									<img src="images/close.png" alt="">
+								</div>
+								<div class="scroll-pane-1">
+									<table class="text_center order_list_table">
+										<thead>
+											<tr>
+												<th class="order_list_table_1">№</th>
+												<th class="order_list_table_2">Дата</th>
+												<th class="order_list_table_3">Состав заказа</th>
+												<th class="order_list_table_4">Сумма</th>
+												<th class="order_list_table_5">Статус</th>
+												<th class="order_list_table_6"></th>
+											</tr>
+										</thead>
+										<tbody class="table_scroll">
+											<tr>
+												<td class="number_order_list">1</td>
+												<td class="date_order_list">25.12.2015</td>
+												<td class="count_order_list">5 шт.</td>
+												<td class="price_order price_val_list price_val">100 <span>₽</span></td>
+												<td class="status_order_list">
+													<div class="active">Принят, ожидается оплата</div>
+													<a href="#" class="read_more">подробнее</a>
+												</td>
+												<td class="link_order_list">
+													<a href="#" class="update_order_list">
+														<img src="images/update.png" alt="">
+													</a>
+													<a href="#" class="close_order_list">
+														<img src="images/close_min.png" alt="">
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="number_order_list">2</td>
+												<td class="date_order_list">24.12.2015</td>
+												<td class="count_order_list">15 шт.</td>
+												<td class="price_order price_val_list price_val">32100 <span>₽</span></td>
+												<td class="status_order_list">
+													<div class="active">Оплачен. Ожидайте доставки</div>
+													<a href="#" class="read_more">подробнее</a>
+												</td>
+												<td class="link_order_list">
+													<a href="#" class="update_order_list">
+														<img src="images/update.png" alt="">
+													</a>
+													<a href="#" class="close_order_list">
+														<img src="images/close_min.png" alt="">
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="number_order_list">3</td>
+												<td class="date_order_list">23.12.2015</td>
+												<td class="count_order_list">25 шт.</td>
+												<td class="price_order price_val_list price_val">38600 <span>₽</span></td>
+												<td class="status_order_list">
+													<div>Отменен</div>
+													<a href="#" class="read_more">подробнее</a>
+												</td>
+												<td class="link_order_list">
+													<a href="#" class="update_order_list">
+														<img src="images/update.png" alt="">
+													</a>
+													<a href="#" class="close_order_list">
+														<img src="images/close_min.png" alt="">
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="number_order_list">4</td>
+												<td class="date_order_list">18.12.2015</td>
+												<td class="count_order_list">10 шт.</td>
+												<td class="price_order price_val_list price_val">6200 <span>₽</span></td>
+												<td class="status_order_list">
+													<div>Выполнен</div>
+													<a href="#" class="read_more">подробнее</a>
+												</td>
+												<td class="link_order_list">
+													<a href="#" class="update_order_list">
+														<img src="images/update.png" alt="">
+													</a>
+													<a href="#" class="close_order_list">
+														<img src="images/close_min.png" alt="">
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="number_order_list">5</td>
+												<td class="date_order_list">17.12.2015</td>
+												<td class="count_order_list">10 шт.</td>
+												<td class="price_order price_val_list price_val">6200 <span>₽</span></td>
+												<td class="status_order_list">
+													<div>Выполнен</div>
+													<a href="#" class="read_more">подробнее</a>
+												</td>
+												<td class="link_order_list">
+													<a href="#" class="update_order_list">
+														<img src="images/update.png" alt="">
+													</a>
+													<a href="#" class="close_order_list">
+														<img src="images/close_min.png" alt="">
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="number_order_list">6</td>
+												<td class="date_order_list">12.12.2015</td>
+												<td class="count_order_list">5 шт.</td>
+												<td class="price_order price_val_list price_val">4300 <span>₽</span></td>
+												<td class="status_order_list">
+													<div>Выполнен</div>
+													<a href="#" class="read_more">подробнее</a>
+												</td>
+												<td class="link_order_list">
+													<a href="#" class="update_order_list">
+														<img src="images/update.png" alt="">
+													</a>
+													<a href="#" class="close_order_list">
+														<img src="images/close_min.png" alt="">
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="number_order_list">7</td>
+												<td class="date_order_list">24.12.2015</td>
+												<td class="count_order_list">15 шт.</td>
+												<td class="price_order price_val_list price_val">32100 <span>₽</span></td>
+												<td class="status_order_list">
+													<div class="active">Оплачен. Ожидайте доставки</div>
+													<a href="#" class="read_more">подробнее</a>
+												</td>
+												<td class="link_order_list">
+													<a href="#" class="update_order_list">
+														<img src="images/update.png" alt="">
+													</a>
+													<a href="#" class="close_order_list">
+														<img src="images/close_min.png" alt="">
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="number_order_list">8</td>
+												<td class="date_order_list">24.12.2015</td>
+												<td class="count_order_list">15 шт.</td>
+												<td class="price_order price_val_list price_val">32100 <span>₽</span></td>
+												<td class="status_order_list">
+													<div class="active">Оплачен. Ожидайте доставки</div>
+													<a href="#" class="read_more">подробнее</a>
+												</td>
+												<td class="link_order_list">
+													<a href="#" class="update_order_list">
+														<img src="images/update.png" alt="">
+													</a>
+													<a href="#" class="close_order_list">
+														<img src="images/close_min.png" alt="">
+													</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="row you_product">
+									<div class="col-sm-2 col-xs-4 title">
+										<strong>Вы смотрели:</strong>
+									</div>
+									<div class="col-sm-10 col-xs-8">
+										<div class="row text_center">
+											<div class="col-sm-3 col-xs-6 item_you_product">
+												<div class="text_center">
+													<img src="images/product_1.png" alt="">
+												</div>
+												<h4>PROSHAR Skirmish Black</h4>
+											</div>
+											<div class="col-sm-3 col-xs-6 item_you_product">
+												<div class="text_center">
+													<img src="images/product_3.png" alt="">
+												</div>
+												<h4>PROSHAR TOURNAMENT</h4>
+											</div>
+											<div class="col-sm-3 col-xs-6 item_you_product">
+												<div class="text_center">
+													<img src="images/product_2.png" alt="">
+												</div>
+												<h4>PRO ICE</h4>
+											</div>
+											<div class="col-sm-3 col-xs-6 item_you_product">
+												<div class="text_center">
+													<img src="images/product_2.png" alt="">
+												</div>
+												<h4>PRO ICE</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="orders_block orders_block_2">
+								<div class="close_order_block text_right button">
+									<img src="images/close.png" alt="">
+								</div>
+								<div class="status_order">
+									<table>
+										<tbody>
+											<tr>	
+												<td class="status_order_1 status_order_title">
+													<div class="number_order">Заказ №1</div>
+													<div class="price_order price_val">11 889 950 <span>₽</span></div>
+												</td>
+												<td class="status_order_2 status_order_title">
+													<div class="inline_block date_order">25.12.2015</div>
+													<div class="inline_block">
+														<a href="#" class="read_more_red">Подробно</a>
+													</div>
+													<div class="message success">
+														Оплачен, ожидайте доставки
+													</div>
+													<div class="row">
+														<div class="col-sm-6 col-xs-6">
+															<a href="#" class="btn btn-desc">Повторить</a>
+														</div>
+														<div class="col-sm-6 col-xs-6">
+															<a href="#" class="btn btn-desc">Отменить</a>
+														</div>
+													</div>
+												</td>
+												<td class="status_order_title"></td>
+											</tr>
+											<tr class="status_order_product">
+												<td class="status_order_1 status_order_title">Состав заказ:</td>
+												<td class="status_order_2 status_order_title"></td>
+												<td class="status_order_title"></td>
+											</tr>
+											<tr class="status_order_product">
+												<td class="status_order_1">1. PROSHAR TOURNAMENT</td>
+												<td class="status_order_2">
+													<div class="inline_block count_one_product">2<span>шт</span></div>
+													<div class="inline_block price_one_product price_val">2800 <span>₽</span></div>
+													<div class="inline_block pull-right button">
+														<img src="images/close_min.png" alt="">
+													</div>
+												</td>
+												<td></td>
+											</tr>
+											<tr class="status_order_product">
+												<td class="status_order_1">2. PROSHAR PREMIUM</td>
+												<td class="status_order_2">
+													<div class="inline_block count_one_product">5<span>шт</span></div>
+													<div class="inline_block price_one_product price_val">2800 <span>₽</span></div>
+													<div class="inline_block pull-right button">
+														<img src="images/close_min.png" alt="">
+													</div>
+												</td>
+												<td></td>
+											</tr>
+											<tr class="status_order_product">
+												<td class="status_order_1">3. PRO ICE</td>
+												<td class="status_order_2">
+													<div class="inline_block count_one_product">4<span>шт</span></div>
+													<div class="inline_block price_one_product price_val">2800 <span>₽</span></div>
+													<div class="inline_block pull-right button">
+														<img src="images/close_min.png" alt="">
+													</div>
+												</td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<tbody>
+											<tr>	
+												<td class="status_order_1 status_order_title">
+													<div class="number_order">Заказ №2</div>
+													<div class="price_order price_val">85 550 <span>₽</span></div>
+												</td>
+												<td class="status_order_2 status_order_title">
+													<div class="inline_block">25.12.2015</div>
+													<div class="inline_block">
+														<a href="#" class="read_more_red">Подробно</a>
+													</div>
+													<div class="message info">
+														Принят, ожидается оплата
+													</div>
+													<div class="row">
+														<div class="col-sm-6 col-xs-6">
+															<a href="#" class="btn btn-desc">Повторить</a>
+														</div>
+														<div class="col-sm-6 col-xs-6">
+															<a href="#" class="btn btn-desc">Отменить</a>
+														</div>
+													</div>
+												</td>
+												<td class="status_order_title"></td>
+											</tr>
+											<tr class="status_order_product">
+												<td class="status_order_1 status_order_title">Состав заказ:</td>
+												<td class="status_order_2 status_order_title"></td>
+												<td class="status_order_title"></td>
+											</tr>
+											<tr class="status_order_product">
+												<td class="status_order_1">1. PROSHAR TOURNAMENT</td>
+												<td class="status_order_2">
+													<div class="inline_block count_one_product">2<span>шт</span></div>
+													<div class="inline_block price_one_product price_val">2800 <span>₽</span></div>
+													<div class="inline_block pull-right button">
+														<img src="images/close_min.png" alt="">
+													</div>
+												</td>
+												<td></td>
+											</tr>
+											<tr class="status_order_product">
+												<td class="status_order_1">2. PROSHAR PREMIUM</td>
+												<td class="status_order_2">
+													<div class="inline_block count_one_product">5<span>шт</span></div>
+													<div class="inline_block price_one_product price_val">2800 <span>₽</span></div>
+													<div class="inline_block pull-right button">
+														<img src="images/close_min.png" alt="">
+													</div>
+												</td>
+												<td></td>
+											</tr>
+											<tr class="status_order_product">
+												<td class="status_order_1">3. PRO ICE</td>
+												<td class="status_order_2">
+													<div class="inline_block count_one_product">4<span>шт</span></div>
+													<div class="inline_block price_one_product price_val">2800 <span>₽</span></div>
+													<div class="inline_block pull-right button">
+														<img src="images/close_min.png" alt="">
+													</div>
+												</td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="orders_block orders_block_3">
+								<div id="read_more_order">
+									<table>
+										<tbody>
+											<tr>
+												<td class="title_order_more">Заказ №1</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td class="label_order">Текущий статус</td>
+												<td class="value_order">Принят, ожидается оплата (от 25.12.2015)</td>
+											</tr>
+											<tr>
+												<td class="label_order">Сумма</td>
+												<td class="value_order">
+													<div class="price_order price_val">12 800 001<span>₽</span></div>
+												</td>
+											</tr>
+											<tr>
+												<td class="label_order">Отменен</td>
+												<td class="value_order">Нет <a href="#">[Отменить]</a></td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="row">
+										<div class="col-sm-5">
+											<table>
+												<tbody>
+													<tr>
+														<td class="title_order_more">Данные учетной записи</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td class="label_order">Логин:</td>
+														<td class="value_order">admin</td>
+													</tr>
+													<tr>
+														<td class="label_order">E-Mail адрес:</td>
+														<td class="value_order">support@proshar.ru</td>
+													</tr>
+												</tbody>
+											</table>
+											<table>
+												<tbody>
+													<tr>
+														<td class="title_order_more">Параметры заказа</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td class="label_order">Тип плательщика:</td>
+														<td class="value_order">Физическое лицо</td>
+													</tr>
+												</tbody>
+											</table>
+											<table>
+												<tbody>
+													<tr>
+														<td class="title_order_more">Личные данные</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td class="label_order">ФИО:</td>
+														<td class="value_order">Без имени</td>
+													</tr>
+													<tr>
+														<td class="label_order">E-Mail:</td>
+														<td class="value_order">test@test.ru</td>
+													</tr>
+													<tr>
+														<td class="label_order">Телефон:</td>
+														<td class="value_order">+79879876541</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="col-sm-7">
+											<table>
+												<tbody>
+													<tr>
+														<td class="title_order_more">Данные для доставки</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td class="label_order">Индекс:</td>
+														<td class="value_order">101000</td>
+													</tr>
+													<tr>
+														<td class="label_order">Местоположение:</td>
+														<td class="value_order">Москва, Московская область, Центр, Россия</td>
+													</tr>
+													<tr>
+														<td class="label_order">Город:</td>
+														<td class="value_order">Москва</td>
+													</tr>
+													<tr>
+														<td class="label_order">Адрес доставки:</td>
+														<td class="value_order">Krasnodarskaya 14-39</td>
+													</tr>
+												</tbody>
+											</table>
+											<table>
+												<tbody>
+													<tr>
+														<td class="title_order_more">Данные для доставки</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td class="label_order">Платежная система:</td>
+														<td class="value_order">Наличным курьеру</td>
+													</tr>
+													<tr>
+														<td class="label_order">Оплачен:</td>
+														<td class="value_order">Нет</td>
+													</tr>
+													<tr>
+														<td class="label_order">Служба доставки:</td>
+														<td class="value_order">Доставка курьером</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="title_order_more">Состав заказа</div>
+									<table>
+										<tbody>
+											<tr>
+												<td class="order_more_img">
+													<img src="images/product_4.png" alt="">
+												</td>
+												<td class="order_more_name">PROSHAR Premium</td>
+												<td class="order_more_count">22<span>шт</span></td>
+												<td class="order_more_price price_val">2800<span>₽</span></td>
+											</tr>
+											<tr>
+												<td class="order_more_img">
+													<img src="images/product_2.png" alt="">
+												</td>
+												<td class="order_more_name">PROSHAR TOURNAMENT</td>
+												<td class="order_more_count">39<span>шт</span></td>
+												<td class="order_more_price price_val">2800<span>₽</span></td>
+											</tr>
+											<tr>
+												<td class="order_more_img">
+													<img src="images/product_2.png" alt="">
+												</td>
+												<td class="order_more_name">PROSHAR Skirmish Black</td>
+												<td class="order_more_count">100<span>шт</span></td>
+												<td class="order_more_price price_val">2800<span>₽</span></td>
+											</tr>
+											<tr>
+												<td class="order_more_img">
+													<img src="images/product_3.png" alt="">
+												</td>
+												<td class="order_more_name">PRO ICE</td>
+												<td class="order_more_count">56<span>шт</span></td>
+												<td class="order_more_price price_val">2800<span>₽</span></td>
+											</tr>
+										</tbody>
+									</table>
+									<a class="btn btn-default btn_back pull-left">Назад</a>
+									<div class="total_more_order pull-right">
+										<table>
+											<tr>
+												<td class="label">Товаров на</td>
+												<td class="value text_right">12 800 001<span>₽</span></td>
+											</tr>
+											<tr>
+												<td class="label">Доствка</td>
+												<td class="value text_right">500<span>₽</span></td>
+											</tr>
+											<tr>
+												<td class="label">Всего</td>
+												<td class="value text_right">12 800 001<span>₽</span></td>
+											</tr>
+										</table>
+									</div>
+									<div class="clear"></div>
+									<div class="row you_product">
+										<div class="col-sm-2 col-xs-4 title">
+											<strong>Вы смотрели:</strong>
+										</div>
+										<div class="col-sm-10 col-xs-8">
+											<div class="row text_center">
+												<div class="col-sm-3 col-xs-6 item_you_product">
+													<div class="text_center">
+														<img src="images/product_1.png" alt="">
+													</div>
+													<h4>PROSHAR Skirmish Black</h4>
+												</div>
+												<div class="col-sm-3 col-xs-6 item_you_product">
+													<div class="text_center">
+														<img src="images/product_3.png" alt="">
+													</div>
+													<h4>PROSHAR TOURNAMENT</h4>
+												</div>
+												<div class="col-sm-3 col-xs-6 item_you_product">
+													<div class="text_center">
+														<img src="images/product_2.png" alt="">
+													</div>
+													<h4>PRO ICE</h4>
+												</div>
+												<div class="col-sm-3 col-xs-6 item_you_product">
+													<div class="text_center">
+														<img src="images/product_2.png" alt="">
+													</div>
+													<h4>PRO ICE</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end .cart-->
+		</div>
+		<!--end #content-->
+		</div>
+		<!--end .products-->
+	</div>
+	<!--end #page-->
+
+
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<!-- Include js plugin -->  
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+
+<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="js/wSelect.min.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+	<div class="rg-image-wrapper">
+		{{if itemsCount > 1}}
+			<div class="rg-image-nav">
+				<a href="#" class="rg-image-nav-prev">Previous Image</a>
+				<a href="#" class="rg-image-nav-next">Next Image</a>
+			</div>
+		{{/if}}
+		<div class="rg-image"></div>
+		<div class="rg-loading"></div>
+		<div class="rg-caption-wrapper">
+			<div class="rg-caption" style="display:none;">
+				<p></p>
+			</div>
+		</div>
+	</div>
+</script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/order.js"></script>
+
+</html>
