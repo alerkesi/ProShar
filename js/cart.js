@@ -38,14 +38,15 @@ var stubProducts = JSON.stringify([
 ]);
 
 function Product(data) {
+    this.id = data.id;
     this.name = data.name || '';
     this.description = data.description || '';
     this.price = data.price || 0;
     this.imageUrl = data.imageUrl || '';
 }
 
-$(document).ready(function() {
-    var productItems = JSON.parse(stubProducts).map(function(item) {
+$(document).ready(function () {
+    var productItems = JSON.parse(stubProducts).map(function (item) {
         return new Product(item)
     });
 
@@ -59,87 +60,112 @@ $(document).ready(function() {
 
     var $cartContainer = $('#cartProducts');
     var $cartItemTemplate = $('#cartProductsTemplate');
-    var $cartTotal = $cartContainer.find('.data-total');
+    var $cartTotal = $('#cart').find('.data-total');
+    var $cartTotalNumber = $('.data-total-number');
     var cartProducts = [];
 
     var $tempTemplate;
 
-    productItems.forEach(function(item, index) {
+    productItems.forEach(function (item, index) {
         $tempTemplate = $oneProductItemTemplate.clone();
+        $tempTemplate.find('.item').attr('data-id', item.id);
         $tempTemplate.find('img').attr({src: item.imageUrl, alt: item.name});
         $tempTemplate.find('h4').text(item.name);
         $tempTemplate.find('.data-description').text(item.description);
         $tempTemplate.find('.data-price').text(item.price);
-        $tempTemplate.find('.add_to_cart').on('click', function() {
-            var number = $(this).find('input').val();
-            addProductToCart(item.id, number);
-        });
+
         oneProductItems.push($tempTemplate.html());
 
         $tempTemplate = $allProductsItemTemplate.clone();
         $tempTemplate.find('img').attr({src: item.imageUrl, alt: item.name});
         $tempTemplate.find('h4').text(item.name);
         $tempTemplate.children('div').data().owl = index;
-        allProductsItems.push($tempTemplate.html());
 
+        allProductsItems.push($tempTemplate.html());
     });
 
     $oneProductItemTemplate.remove();
-    $allProductsItemTemplate.remove();
-
     $oneProductContainer.append(oneProductItems);
+    $oneProductContainer.children().each(function(index, element) {
+        $(element).on('click', '.add_to_cart', function() {
+            addProductToCart($(element).data().id, Number($(element).find('input').val()));
+        });
+
+
+    });
+
+
+    $allProductsItemTemplate.remove();
     $allProductsContainer.append(allProductsItems);
 
     function addProductToCart(itemId, number) {
-        var isAdded = cartProducts.some(function(cartItem) {
+        var isAdded = cartProducts.some(function (cartItem) {
             return cartItem.product.id === itemId;
         });
 
         if (!isAdded) {
-            productItems.some(function(item) {
-                cartProducts.push({
-                    product: item,
-                    number: number
-                });
+            productItems.some(function (item) {
+                if (item.id === itemId) {
+                    return cartProducts.push({
+                        product: item,
+                        number: number
+                    });
+                }
             });
-            renderCart(true);
+            renderCart();
         } else {
             updateProductInCart(itemId, number);
         }
     }
 
     function updateProductInCart(itemId, number) {
-        cartProducts.some(function(cartItem) {
+        cartProducts.some(function (cartItem) {
             if (cartItem.product.id === itemId) {
                 cartItem.number += number;
                 return true;
             }
         });
 
-        renderCart(false);
+        renderCart();
     }
 
-    function renderCart(rerender) {
+    function renderCart() {
         var $cartTemplate;
         var total = 0;
 
-        cartProducts.forEach(function(cartItem) {
+        cartProducts.forEach(function (cartItem) {
             var item = cartItem.product;
+            var id = 'cartItem_' + item.id;
 
-            if (rerender) {
+            var exist = document.getElementById(id);
+
+            if (!exist) {
                 $cartTemplate = $cartItemTemplate.clone();
+                $cartTemplate.find('.row').attr('id', id);
                 $cartTemplate.find('img').attr({src: item.imageUrl, alt: item.name});
                 $cartTemplate.find('.data-name').text(item.name);
                 $cartTemplate.find('.data-price').text(item.price);
+                var $input = $cartTemplate.find('input');
+                $input.val(cartItem.number);
+                $cartContainer.append($cartTemplate.html());
+                $cartContainer.find('#' + id).find('input')
+                    .change(function() {
+                        cartItem.number = Number(this.value);
+                        renderCart();
+                    })
+                    .styler()
+                    .parents('.jq-number').on('click', '.jq-number__spin', function() {
+                        cartItem.number = Number($(this).parent().find('input').val());
+                        renderCart();
+                    });
+            } else {
+                $(exist).find('input').val(cartItem.number);
             }
 
-            $cartTemplate.find('input').val(cartItem.number);
-
-            total += number * item.price;
+            total += cartItem.number * item.price;
         });
 
-        $cartTotal.val(total);
+        $cartTotal.text(total);
+        $cartTotalNumber.text(cartProducts.length);
     }
-
-
 });

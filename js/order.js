@@ -26,10 +26,6 @@ $(document).ready(function(){
 		$('.register_form').fadeIn(300);
 	})
 
-
-
-	
-
 	$('.btnNext').click(function(){
 		$('.nav-tabs > .active').next('li').find('a').trigger('click');
 
@@ -68,11 +64,35 @@ $(document).ready(function(){
 	    $bodyCells = $table.find('tbody tr:first').children(),
 	    colWidth;
 
+	//калькуляции с корзиной
+	var $cartContainer = $('#cart_list tbody');
+	var $cartTotal = $('#cart-total');
+	var total = 0;
+	$cartContainer.find('tr').each(function(index, element) {
+		recordTotal(element);
+
+		$(element).on('click', '.jq-number__spin', recordTotal.bind(null, element));
+
+		$(element).find('input').change(recordTotal.bind(null, element));
+	});
+
+	function recordTotal(element) {
+		$(element).data().total = Number($(element).find('input').val()) * Number($(element).find('[data-price]').data().price);
+		recalculate();
+	}
+
+	function recalculate() {
+		total = 0;
+		$cartContainer.find('tr').each(function(index, element) {
+			total += $(element).data().total;
+		});
+		$cartTotal.text(total);
+	}
+
 	// Adjust the width of thead cells when window resizes
 	$(window).resize(function() {
 	    // Get the tbody columns width array
 	    colWidth = $bodyCells.map(function() {
-	    	 console.log($(this).width());
 	        return $(this).width();
 
 	    }).get();
@@ -85,7 +105,6 @@ $(document).ready(function(){
 
 	$('.all_orders').on('click', function() {
 		colWidth = $bodyCells.map(function() {
-	    	 console.log($(this).width());
 	        return $(this).width();
 
 	    }).get();

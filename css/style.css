@@ -643,7 +643,7 @@ header.black .minicart_count {
 }
 .home .home_content {
 	position: relative;
-	z-index: 99999
+	z-index: 9999
 }
 
 .left_sidebar{
@@ -651,7 +651,7 @@ header.black .minicart_count {
 	left: 0;
 	height: 100%;
 	width: 160px;
-	z-index: 999;
+	z-index: 10000;
 	padding-top: 145px;
 	top: 0;
 }
